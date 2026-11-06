@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8ed;
+  color: #28153f;
+}
+main {
+  padding: 30px 8%;
+}
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navigation and hero banner */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 8%;
+  background: #28153f;
+  color: white;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: .3s;
+}
+nav a:hover {
+  color: #ff9d22;
+}
+header {
+  text-align: center;
+  padding: 45px 15px;
+  background: #ff9d22;
+}
+header h1 {
+  margin-bottom: 12px;
+}
+#status {
+  font-weight: bold;
+  margin-top: 10px;
+}
+#status.open {
+  color: #1b5e20;
+}
+#status.closed {
+  color: #8b0000;
+}
+#statusBtn {
+  width: auto;
+  padding: 10px 22px;
+  margin-top: 14px;
+}
+
+/* Menu cards */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+article {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px #0002;
+  transition: .3s;
+}
+article:hover {
+  transform: translateY(-6px);
+}
+article p {
+  margin: 12px 0;
+}
+article b {
+  color: #c45b00;
+}
+
+/* Order form */
+#order {
+  max-width: 500px;
+  margin: 35px auto;
+  text-align: center;
+}
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  background: #7136a5;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+button:hover {
+  background: #ff9d22;
+  transform: scale(1.03);
+}
+#result {
+  margin-top: 15px;
+  padding: 12px;
+  line-height: 1.5;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #28153f;
+  color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 650px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  nav a {
+    margin: 0 6px;
+  }
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding: 25px 5%;
+  }
+}
